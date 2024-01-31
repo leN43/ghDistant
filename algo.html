@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #helloWorldLabel {
+        font-size: 24px;
+        color: yellow;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="helloWorldLabel">Hello World</div>
+
+    <script>
+      // You can include your JavaScript code here
+      // For simplicity, we'll just add the script directly in the HTML file
+
+      // You may want to wait for the DOM to be ready before manipulating it
+      document.addEventListener("DOMContentLoaded", function () {
+        // Create a div element for the label
+        var label = document.createElement("div");
+        label.id = "helloWorldLabel";
+        label.innerText = "Hello World";
+
+        // Apply styling
+        label.style.fontSize = "24px";
+        label.style.color = "yellow";
+        label.style.textAlign = "center";
+
+        // Append the label to the body
+        document.body.appendChild(label);
+      });
+    </script>
+  </body>
+</html>
